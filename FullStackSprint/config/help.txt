@@ -1,0 +1,43 @@
+# CLI Commands Help
+
+## config
+
+Manage configuration settings.
+
+### Subcommands
+
+- `show`: Display current configuration settings.
+  Example: `myapp config show`
+
+- `set <key> <value>`: Update a specific configuration setting.
+  Example: `myapp config set port 3001`
+
+- `reset`: Reset configuration settings to default values.
+  Example: `myapp config reset`
+
+## token
+
+Generate and manage user tokens.
+
+### Subcommands
+
+- `count`: Display the count of tokens created.
+  Example: `myapp token count`
+
+- `new <username>`: Generate a token for a given username and save it to the JSON file.
+  Example: `myapp token new john`
+
+- `upd p <username> <phone>`: Update the phone number for a user.
+  Example: `myapp token upd p john +1234567890`
+
+- `upd e <username> <email>`: Update the email for a user.
+  Example: `myapp token upd e john john@example.com`
+
+- `search u <username>`: Fetch a token for a given username.
+  Example: `myapp token search u john`
+
+- `search e <email>`: Fetch a token for a given email.
+  Example: `myapp token search e john@example.com`
+
+- `search p <phone>`: Fetch a token for a given phone number.
+  Example: `myapp token search p +1234567890`
